@@ -1,16 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { useEffect, useState } from 'react';
+import Countries from './components/countries/Countries';
+
 
 function App() {
   return (
     <div className="App">
-      <Counteries></Counteries>
+      <Countries></Countries>
     </div>
   );
 }
 
-
+/* 
 function Counteries() {
   const [countries, setCountries] = useState([])
 
@@ -26,5 +27,5 @@ function Counteries() {
       <h3>View Countries: {countries.length}</h3>
     </div>
   )
-}
+} */
 export default App;
