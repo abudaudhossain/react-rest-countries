@@ -12,9 +12,13 @@ const Countries = () => {
     }, [])
 
     return (
-        <div className="country">
+        <div >
             <h1>Hi I tall my won file 🧑🏼🧑🏼{countries.length}👨🏼👩🏼‍🎨!!</h1>
-            <Country></Country>
+            <div className="countries">
+                {
+                    countries.map(country => <Country key ={country.alpha3Code} country={country}></Country>)
+                }
+            </div>
         </div>
     );
 };

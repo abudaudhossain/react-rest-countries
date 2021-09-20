@@ -1,6 +1,4 @@
-.country{
-    background: chocolate;
-    border: 5px solid cadetblue;
-    border-radius: 15px;
-    padding: 15px;
+.countries {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
